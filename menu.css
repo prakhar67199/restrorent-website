@@ -1,0 +1,141 @@
+/* explore section style start */
+#page-title
+{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.page-title-text
+{
+    font-size: 2.2rem;
+    color: var(--black-1);
+}
+@media only screen and (min-width: 768px)
+{
+    #page-title
+    {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .page-title-text
+    {
+        font-size: 3.6rem;
+    }
+}
+/* explore section style end */
+
+
+
+/* our special section style start */
+#our-special
+{
+    padding: 0;
+}
+.our-special-title
+{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 2rem;
+}
+.our-special-wrapper
+{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    max-width: 400px;
+}
+.our-special-item
+{
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--LightGreen-1);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+.our-special-item-image,
+.our-special-item-info
+{
+    flex: 1;
+}
+.our-special-item-image
+{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.our-special-item-image img{
+    object-fit: cover;
+}
+.our-special-item-title
+{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    line-height: 1.2em;
+}
+.our-special-item-price
+{
+    font-size: 1.8rem;
+    color: var(--green-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.our-special-item-star
+{
+    width: max-content;
+}
+/* for large device */
+@media only screen and (min-width:768px) 
+{
+    .our-special-title
+    {
+        font-size: 2.4rem;
+    }
+    .our-special-wrapper
+    {
+        flex-direction: row;
+        gap: 2rem;
+        max-width: none;
+    }
+    .our-special-item
+    {
+        padding: 3rem;
+        gap: 2rem;
+    }
+    .our-special-item-title
+    {
+        font-size: 3em;
+        margin-bottom: 1.5rem;
+    }
+    .our-special-item-price
+    {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* for extra large device */
+@media only screen and (min-width:1100px)
+{
+    .our-special-item-image
+    {
+        flex: 4;
+    }
+    .our-special-item-info
+    {
+        flex: 3;
+    }
+}
+
+/* our special section style end */
+
+/* to reduce padding between all section */
+#dish-grid
+{
+    padding-bottom: 0;
+}
+/* add pading in last section */
+#dish-grid:last-of-type
+{
+    padding-bottom: 10rem;
+}

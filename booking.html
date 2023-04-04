@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Booking | shaif-s-cuisine </title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/gloabal.css">
+    <link rel="stylesheet" href="/component.css">
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom script -->
+    <script src="./index1.js" defer></script>
+    
+</head>
+<body>
+    <!-- nav section -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.svg" alt="shaif-s-cuisine">
+                </a>
+                <nav>
+
+                    <!-- hamburger icon -->
+                    <div class="nav-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+
+                    <!-- for mobile view slider ** -->
+                    <div class="nav-bgOverlay"></div>
+
+                    <ul class="nav-list ">
+                    
+                        <!-- cross icon -->
+                        <div class="nav-close">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+
+                        <!-- nav-list headings -->
+                        <div class="nav-list-wrapper">
+
+                            <li> <a href="./index.html" class="nav-link">Home</a></li>
+
+                            <li><a href="./index.html" class="nav-link">Menu</a></li>
+
+                            <li><a href="./index.html" class="nav-link">About</a></li>
+
+                            <li><a href="./index.html" class="nav-link">Contact</a></li>
+
+                            <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end of nav section -->
+
+
+
+
+    <!-- book table form start -->
+    <section id="form" data-aos="fade-up">
+        <div class="container">
+            <h3 class="form-title">Book Table</h3>
+            <div class="form-wrapper">
+            
+            <form  name="Book-Table" netlify>
+
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name-data" id="first-name" placeholder="enter your first name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name-data" id="last-name" placeholder="enter your last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" name="email-data" id="email" placeholder="enter your email" required>
+                
+                </div>
+
+                <div class="form-group">
+                    <label for="table-type">Table Type</label>
+                    <select name="table-type"  id="table-type">
+                        <option selected disabled>choose</option>
+                        <option value="small">Small (2 person)</option>
+                        <option value="medium">Medium (4 person)</option>
+                        <option value="large">Large (6 person)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-number">Guest Number</label>
+                    <input type="number" name="guest-number-data" placeholder="enter you number" id="guest-number" min="1" max="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="placement-type">Placement</label>
+                    <select name="Placement-type-data"  id="Placement-type">
+                        <option selected disabled>choose</option>
+                        <option value="Outdoor">Outdoor</option>
+                        <option value="Indoor">Indoor</option>
+                        <option value="Rooftop">Rooftop</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="book-data">Date</label>
+                    <input type="date" name="book-back-data" id="book-data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="book-time">Time</label>
+                    <input type="time" name="book-time-data" id="book-time" required>
+                </div>
+
+                <div class="form-group full-scrn">
+                    <label for="note">Note</label>
+                    <textarea name="note-data" placeholder="enter your message" id="note" rows="6"></textarea> 
+                </div>
+
+                <button type="submit" class="btn primary-btn">Book Table</button>
+
+            </form>
+        </div>
+
+        </div>
+        
+    </section>
+    <!-- book table form end -->
+
+
+
+
+    <!-- start of footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+
+                <!-- footer-column-1 -->
+                <div class="footer-col-1">
+
+                    <!-- logo image -->
+                    <div class="footer-logo">
+                        <img src="/images/logo.svg" alt="">
+                    </div>
+
+                    <!-- footer description -->
+                    <p class="footer-desc">
+                        Fresh and delicious traditional Indian food to delight the whole family.
+                    </p>
+
+                    <!-- short heading -->
+                    <div class="footer-social">
+                        
+                            <h4 class="footer-social-title">Follow Us</h4>
+
+                        <!--social icon list  -->
+                            <ol>
+                                <li>
+                                <!-- facebook icon -->
+                                <a href="#">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-facebook"
+                                    >
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                                <!-- instagram icon -->
+                                <a href="#">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-instagram"
+                                    >
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                    </svg>
+                                </a>
+                                <!--twitter icon  -->
+                                <a href="#">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-twitter"
+                                    >
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg>
+                                </a>
+                                </li>
+                            </ol>
+
+                    </div>
+
+                </div>
+
+                <!-- footer-column 2 -->
+                <div class="footer-col-2">
+                    <!--column-2-heading -->
+                    
+                        <h3 class="footer-text-title">Links</h3>
+                    
+                    <ol class="footer-text">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="./booking.html">Book Table</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- footer-column-3 -->
+                <div class="footer-col-3">
+                    <!--column-3-heading -->
+                    <h3 class="footer-text-title">Support</h3>
+
+                    <!-- list items -->
+                    <ol class="footer-text">
+
+                        <li>
+                            <a href="./index.html">Support Center</a>
+                        </li>
+
+                        <li>
+                            <a href="./menu.html">Feedback</a>
+                        </li>
+
+                        <li>
+                            <a href="./booking.html">Book Table</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- footer-column-4 -->
+                <div class="footer-col-4">
+                    <!--column-4-heading -->
+                    <h3 class="footer-text-title">Contact</h3>
+                    
+                    <!-- list items -->
+                    <ol class="footer-text">
+
+                        <li>
+                            <a href="tel:+91-7235931200">+91-7235931200</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:prakharguptahr10@gmail.com">prakharguptahr10@gmail.com</a>
+                        </li>
+
+                        <li>
+                            <a href="#">The Lodhi, Lodhi Road, Delhi</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- copyright data -->
+    <div id="copyright">
+        <div class="container">
+            <p class="copyright-text">
+                © copyright 2021 Shaif’s Cuisine | All rights reserved
+            </p>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+
+    <h1>This is Booking Page</h1>
+
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    
+</body>
+</html>
